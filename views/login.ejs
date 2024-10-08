@@ -20,7 +20,7 @@
   </head>
   <body>
     <!--=============== HEADER ===============-->
-      <nav class="nav container">
+    <nav class="nav container">
         <a href="index.html" class="nav__logo">
           <img
             class="nav__logo-img"
@@ -39,10 +39,10 @@
           </div>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href= "/" class="nav__link active-link">Home</a>
+              <a href= "/" class="nav__link link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="/login" class="nav__link">Login</a>
+              <a href="/login" class="nav__link active-link">Login</a>
             </li>
             <li class="nav_item">
               <a href="/about" class="nav__link link">About</a>
@@ -51,26 +51,52 @@
         </div>
       </nav>
     </header>
-
-    
-    <!--=============== MAIN ===============-->
-    <main class="main">
-      <!--=============== HOME ===============-->
-      <section class="home section--lg">
-        <div class="home__container container grid">
-          <div class="home__content">
-            <span class="home__subtitle">Hot Promotions</span>
-            <h1 class="home__title">
-              Fashion Trending <span>Great Collection</span>
-            </h1>
-            <p class="home__description">
-              Save more with coupons & up tp 20% off
-            </p>
-            <a href="#" class="btn">Shop Now</a>
+<!--=============== LOGIN-REGISTER ===============-->
+<section class="login-register section--lg">
+    <div class="login-register__container container grid">
+      <div class="login">
+        <h3 class="section__title">Login</h3>
+        <form class="form grid">
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="form__input"
+          />
+          <input
+            type="password"
+            placeholder="Your Password"
+            class="form__input"
+          />
+          <div class="form__btn">
+            <button class="btn">Login</button>
           </div>
-          <img src="../images/home-img.png" class="home__img" alt="hats" />
-        </div>
-      </section>
-
+        </form>
+      </div>
+      <div class="register">
+        <h3 class="section__title">Create an Account</h3>
+        <form class="form grid">
+          <input type="text" placeholder="Username" class="form__input" />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="form__input"
+          />
+          <input
+            type="password"
+            placeholder="Your Password"
+            class="form__input"
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            class="form__input"
+          />
+          <div class="form__btn">
+            <button class="btn">Submit & Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
   </body>
 </html>
